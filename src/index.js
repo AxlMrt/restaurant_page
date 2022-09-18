@@ -25,5 +25,5 @@ homeInfos();
     contactBtn.addEventListener("click", () => {
         mainPage.replaceChildren();
         contactInfos();
-    })
-})()
+    });
+})();

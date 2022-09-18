@@ -1,5 +1,5 @@
 export function initialPage(){
-    const bodyContent = document.getElementById("content")
+    const bodyContent = document.getElementById("content");
 
     //Header is here
     const header = document.createElement("header");
@@ -10,9 +10,12 @@ export function initialPage(){
     header.appendChild(title);
 
     //Nav
-    const headerDiv = document.createElement("div");
+    const headerDiv = document.createElement("nav");
     const headUl = document.createElement("ul");
         headUl.classList.add("nav");
+
+    header.appendChild(headerDiv);
+    headerDiv.appendChild(headUl);
     
     for (let i = 0; i < 3; i++){
         const headLi = document.createElement("li");
@@ -20,26 +23,25 @@ export function initialPage(){
     }
 
     const home = document.createElement("a");
-    home.classList.add("homeBtn")
+    home.classList.add("homeBtn");
     home.textContent = "Accueil";
     home.href = "#";
     const menu = document.createElement("a");
-    menu.classList.add("menuBtn")
+    menu.classList.add("menuBtn");
     menu.textContent = "Menu";
-    menu.href = "#"
+    menu.href = "#";
     const contact = document.createElement("a");
-    contact.classList.add("contactBtn")
+    contact.classList.add("contactBtn");
     contact.textContent = "Contact";
     contact.href = "#";
 
-    header.appendChild(headerDiv);
-    headerDiv.appendChild(headUl);
+
     document.querySelector("li:nth-Child(1)").appendChild(home);
     document.querySelector("li:nth-Child(2)").appendChild(menu);
     document.querySelector("li:nth-Child(3)").appendChild(contact);
 
     //Main
     const mainInfos = document.createElement("div");
-    mainInfos.classList.add("main")
-    bodyContent.appendChild(mainInfos)
+    mainInfos.classList.add("main");
+    bodyContent.appendChild(mainInfos);
 }

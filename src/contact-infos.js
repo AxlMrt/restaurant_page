@@ -6,11 +6,11 @@ export function contactInfos(){
     mainPage.appendChild(mainContent);
 
     const tel = document.createElement("p");
-    tel.textContent = " ☎️ Commandez au 03 87 79 07 73"
-    mainContent.appendChild(tel)
+    tel.textContent = " ☎️ Commandez au 03 87 79 07 73";
+    mainContent.appendChild(tel);
 
     const divMap = document.createElement("div");
     divMap.classList.add("map");
-    mainContent.appendChild(divMap)
+    mainContent.appendChild(divMap);
 
 }

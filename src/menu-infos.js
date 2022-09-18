@@ -7,6 +7,6 @@ export function menuInfos(){
 
     for (let i = 0; i < 12; i++){
         const pizzaDiv = document.createElement("div");
-        mainContent.appendChild(pizzaDiv)
+        mainContent.appendChild(pizzaDiv);
     }
 }
