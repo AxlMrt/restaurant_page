@@ -29,7 +29,6 @@ body{
 
 /* Header */
 header{
-    position: sticky;
     width: 100%;
     background: var(--bg);
     color: var(--title);
@@ -156,7 +155,7 @@ nav ul li a:hover {
 
 /* Footer*/
 .footer {
-    position: absolute;
+    position: relative;
     background: var(--bg);
     color: var(--title);
     border: 1px solid var(--border);
