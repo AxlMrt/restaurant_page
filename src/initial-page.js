@@ -1,6 +1,6 @@
-const bodyContent = document.getElementById("content")
-
 export function initialPage(){
+    const bodyContent = document.getElementById("content")
+
     //Header is here
     const header = document.createElement("header");
     const title = document.createElement("h1");
@@ -28,6 +28,7 @@ export function initialPage(){
     menu.textContent = "Menu";
     menu.href = "#"
     const contact = document.createElement("a");
+    contact.classList.add("contactBtn")
     contact.textContent = "Contact";
     contact.href = "#";
 
@@ -41,37 +42,4 @@ export function initialPage(){
     const mainInfos = document.createElement("div");
     mainInfos.classList.add("main")
     bodyContent.appendChild(mainInfos)
-}
-
-//Home Content
-export function homeInfos(){
-    const mainPage = document.querySelector(".main");
-
-    const mainContent = document.createElement("div");
-    mainContent.classList.add("infos");
-    mainPage.appendChild(mainContent);
-
-    const description = document.createElement("p");
-    description.textContent = "Pizzeria à Metz, Manita vous propose un large choix de pizzas, des plats cuisinés savoureux ainsi que de nombreuses boissons et desserts."
-    mainContent.appendChild(description);
-
-    const manitaImg = document.createElement("img");
-    manitaImg.src = "./manita.png";
-    mainContent.appendChild(manitaImg);
-
-}
-
-//Menu Content
-export function menuInfos(){
-    const mainPage = document.querySelector(".main");
-
-    const mainContent = document.createElement("div");
-    mainContent.classList.add("menuInfos");
-    mainPage.appendChild(mainContent);
-
-    for (let i = 0; i < 12; i++){
-        const pizzaDiv = document.createElement("div");
-        mainContent.appendChild(pizzaDiv)
-    }
-
 }

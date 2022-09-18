@@ -116,6 +116,13 @@ header > h1{
     background: var(--pizzaBg);
 }
 
+/*Contact Infos*/
+.map {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+}
+
 /* Footer*/
 .footer {
     position: absolute;
