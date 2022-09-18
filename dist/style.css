@@ -149,8 +149,8 @@ nav ul li a:hover {
 
 /*Contact Infos*/
 .map {
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 375px;
     background: #fff;
 }
 
@@ -174,4 +174,23 @@ nav ul li a:hover {
   .footer a{
     color: var(--title);
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 820px){
+    .infos{
+        width: 90%;
+        font-size: .8em;
+    }
+
+    .infos img{
+        width: 250px;
+    }
+    .menuInfos {
+        width: 90%;
+    }
+
+    .map{
+        width: 250px;
+        height: 250px;
+    }
   }
